@@ -1,0 +1,6 @@
+Param(   
+    [Parameter(Mandatory = $True, Position = 1)]  
+    [string]$commitMessage
+)
+git add ./src/.
+git commit -m $commitMessage
